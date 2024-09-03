@@ -1,17 +1,15 @@
-/* MENU CSS */
-
 .menu {
-    width: 300px;
-    height: 100%;
-    box-sizing: border-box;
+    width: 16%;
+    height: 100vh; /*depois trocar para 100%*/
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0.5rem;
-    background: var(--cor-primaria);
+    background: var(--cor-tercearia);
     box-shadow: 10px 0px 10px rgba(153, 153, 153, 0.25);
     transition: width 0.8s;
     position: relative;
+    /* box-sizing: border-box; */
     z-index: 1;
 }
   
@@ -21,35 +19,41 @@
   }
   
   .menu-top {
-    margin-top: 1rem;
+    width: 100%; 
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
+    flex-direction: row;
+    align-items: start;
+    margin-top: 0.5rem;
   }
   
+  .menu-logoBotao {
+    display: flex;
+    flex-direction: column;
+    justify-content: start; 
+    margin-left: 2rem;
+  }
+
   .menu-logo {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 800;
-    font-size: 2.8rem;
-    letter-spacing: 0.5px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    transition: opacity 0.5s ease, visibility 0.5s ease;
-  }
-  
-  .menu-logo span {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 800;
-    color: var(--cor-tercearia);
+    margin: auto;
   }
   
   .menu-botao {
-    padding-top: 6px;
+    display: flex;
+  }
+
+  .menu-titulo{
+    margin-top: 1rem;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    font-weight: 600;
+    font-size: 24px;
+    color: #FFFFFF;
   }
   
   .buttons__burger {
     width: var(--size);
-    height: calc(0.8 * var(--size));
+    height: calc(0.7 * var(--size));
     cursor: pointer;
     position: relative;
     display: block;
@@ -65,9 +69,9 @@
     display: block;
     position: absolute;
     width: 100%;
-    border-radius: 0.5rem;
-    border: 3px solid var(--cor-quartenaria);
-    background-color: var(--cor-quartenaria);
+    border-radius: 0.5em;
+    border: 2px solid var(--cor-secundaria);
+    background-color: var(--cor-secundaria);
     transition: 0.5s ease-in-out;
   }
   
@@ -103,8 +107,9 @@
   
   .menu-lista {
     width: 100%;
-    padding: 0% 3%;
+    /* height: 100%; */
     display: flex;
+    padding: 20% 3%;
     flex-direction: column;
     transition: opacity 0.5s ease;
   }
@@ -145,11 +150,11 @@
   
   .submenu-item.selected {
     font-weight: bolder;
-    color: var(--cor-quartenaria);
+    color: var(--cor-tercearia);
   }
   
   .menu.fechado {
-    width: 80px;
+    width: 3.5%;
   }
   
   .menu.fechado .menu-logo {
@@ -157,10 +162,18 @@
     display: none;
   }
   
+  .menu.fechado .menu-logoBotao{
+    margin: 0;
+  }
+
   .menu.fechado .menu-botao {
     margin: 0.7rem;
   }
   
+  .menu.fechado .menu-titulo{
+    display: none;
+  }
+
   .menu.fechado .listaMenu-botao label {
     display: none;
   }
@@ -197,7 +210,7 @@
   
   @media (max-width: 1440px) {
     .menu {
-      width: 250px;
+    width: 20%;
     }
     .menu-logo {
       font-size: 2.2rem;

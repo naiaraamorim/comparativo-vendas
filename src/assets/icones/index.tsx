@@ -26,6 +26,7 @@ import iconeFaturamentoGeralPreto from './iconeFaturamentoGeral.svg'
 import iconeFaturamentoGeral from './iconeFaturamentoGeral_branco.svg'
 import equipe from './equipe.svg';
 import equipePreto from './equipe_preto.svg';
+import logoSistema from './logoCRM-2W.svg';
 
 export const icons = {
     iconeMenu,
@@ -56,4 +57,5 @@ export const icons = {
     iconeFaturamentoGeralPreto,
     equipe,
     equipePreto,
+    logoSistema,
   };

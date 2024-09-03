@@ -23,7 +23,7 @@
     font-size: 1.2rem;
     font-weight: 600;
     cursor: pointer;
-    color: var(--cor-tercearia);
+    color: var(--cor-primaria);
     flex-grow: 0.8;
     transition: color 0.5s ease, font-weight 0.5s ease;
 }
@@ -34,7 +34,7 @@
 
 .listaMenu-botao.selected {
     padding: 10px 0px;
-    background-color: var(--cor-tercearia);
+    background-color: var(--cor-primaria);
     border-radius: 5px;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .listaMenu-botao.selected label {
-    color: var(--cor-secundaria);
+    color: var(--cor-tercearia);
 }
 
 .listaMenu-seta {
