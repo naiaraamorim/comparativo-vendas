@@ -1,18 +1,36 @@
 import React from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import ComparativoVendas from './pages/comparativoVendas';
 import './App.css'
+import Menu from './components/menu/Menu';
+import Cabecalho from './components/cabecalho/Cabecalho';
 
 const App: React.FC =  () =>  {
   return (
     <>
-      <h1>Vite + React</h1>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        <Router>
+          <div className="app">
+            <AuthenticatedLayout />
+          </div>
+        </Router>
     </>
-  )
-}
+  );
+};
+
+const AuthenticatedLayout = () => {
+
+  return (
+    <>
+      {<Menu />}
+      <div className="app-main">
+        {<Cabecalho />}
+        <Routes>
+          <Route path="/" element={<ComparativoVendas />} />
+        </Routes>
+      </div>
+    </>
+  );
+};
+
 
 export default App

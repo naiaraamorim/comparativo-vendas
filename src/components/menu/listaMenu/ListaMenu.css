@@ -1,0 +1,66 @@
+.listaMenu-botao {
+    margin-top: 1.6rem;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+    transition: background-color 0.5s ease, padding 0.5s ease;
+}
+
+.listaMenu-icone {
+    margin-right: 0.8rem;
+    text-align: right;
+    flex-shrink: 0; 
+    width: 25px;
+    height: 25px;
+}
+
+.listaMenu-botao label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--cor-tercearia);
+    flex-grow: 0.8;
+    transition: color 0.5s ease, font-weight 0.5s ease;
+}
+
+.listaMenu-botao:hover label {
+    font-weight: 700;
+}
+
+.listaMenu-botao.selected {
+    padding: 10px 0px;
+    background-color: var(--cor-tercearia);
+    border-radius: 5px;
+}
+
+.listaMenu-botao.selected.com-seta {
+    border-radius: 10px 10px 0 0;
+}
+
+.listaMenu-botao.selected label {
+    color: var(--cor-secundaria);
+}
+
+.listaMenu-seta {
+    transition: transform 0.5s;
+}
+
+.listaMenu-seta.selected{
+    transform: rotate(90deg);
+}
+
+@media (max-width: 1440px) {
+    .listaMenu-botao label {
+        font-size: 14px;
+    }
+
+    .listaMenu-icone {
+        width: 20px;
+        height: 20px;
+    }
+}

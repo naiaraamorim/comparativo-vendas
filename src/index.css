@@ -4,9 +4,13 @@
 :root {
   font-family: Oxygen;
   
-  --color-primaria: #FFFFFF;
-  --color-secundaria: #6A2027;
-  --color-tercearia: #E1E1E1;
+  --cor-primaria: #D9D9D9;
+  --cor-secundaria: #FFFFFF;
+  --cor-tercearia: #730202;
+  --cor-quartenaria: #000000;
+
+  --cor-hover: #b61414;
+  --size: 2.2rem;
 }
 
 * {
