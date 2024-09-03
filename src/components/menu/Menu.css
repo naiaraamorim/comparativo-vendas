@@ -40,7 +40,7 @@
   .menu-botao {
     display: flex;
   }
-
+  
   .menu-titulo{
     margin-top: 1rem;
     display: flex;
@@ -154,7 +154,7 @@
   }
   
   .menu.fechado {
-    width: 3.5%;
+    width: 4%;
   }
   
   .menu.fechado .menu-logo {
@@ -167,7 +167,7 @@
   }
 
   .menu.fechado .menu-botao {
-    margin: 0.7rem;
+    padding: 1rem;
   }
   
   .menu.fechado .menu-titulo{
@@ -192,7 +192,7 @@
   
   .menu.fechado .listaMenu-botao.selected {
     padding: 10px 0;
-    background-color: var(--cor-tercearia);
+    background-color: var(--cor-secundaria);
     border-radius: 2px;
   }
   

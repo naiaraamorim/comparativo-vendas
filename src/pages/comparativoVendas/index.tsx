@@ -4,7 +4,7 @@ import './index.css';
 const ComparativoVendas: React.FC = () => {
     return(
         <>
-            
+
         </>
     );
 }
