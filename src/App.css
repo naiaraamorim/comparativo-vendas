@@ -11,6 +11,12 @@
   flex-grow: 1;
 }
 
+
+.app-main {
+  height: 100%;
+  flex-grow: 1;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
